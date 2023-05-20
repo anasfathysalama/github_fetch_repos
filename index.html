@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GitHub App</title>
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1 class="header-title">Github App</h1>
+      </header>
+
+      <div class="content">
+        <div class="left">
+          <div class="card">
+            <h2>Search for repo</h2>
+            <form id="search-form">
+              <label>Username</label>
+              <input type="text" id="username" />
+              <button class="custom-btn" type="submit" id="submit-btn">Fetch</button>
+            </form>
+          </div>
+
+          <div class="card">
+            <h2>Filter By</h2>
+            <div class="lang">
+              <button class="custom-btn" data-lng="javascript">JS</button>
+              <button class="custom-btn" data-lng="php">PHP</button>
+              <button class="custom-btn" data-lng="python">PYTHON</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="right">
+            <p id="seacrh-item">javascript</p>
+            <div id="repos">
+                 
+            </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="./js/scripts.js"></script>
+  </body>
+</html>
